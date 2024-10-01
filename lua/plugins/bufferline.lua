@@ -16,7 +16,7 @@ return {
         })
 
         vim.opt.termguicolors = true
-        vim.keymap.set("n", "gt", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
-        vim.keymap.set("n", "gT", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
+        -- vim.keymap.set("n", "gt", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
+        -- vim.keymap.set("n", "gT", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
     end,
 }
