@@ -12,3 +12,8 @@ vim.cmd("set shiftwidth=4")
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
+
+vim.keymap.set("n", "tn", ":bn<CR>", {})
+vim.keymap.set("n", "tp", ":bp<CR>", {})
+vim.keymap.set("n", "tc", ":bd<CR>", {})
+
