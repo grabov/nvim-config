@@ -10,7 +10,7 @@ return {
         config = function()
             -- TODO: python, js, ts, html, css
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls" },
+                ensure_installed = { "lua_ls", "pyright", "ts_ls", "html", "cssls" },
             })
         end,
     },
@@ -21,6 +21,22 @@ return {
             local lspconfig = require("lspconfig")
 
             lspconfig.lua_ls.setup({
+                capabilities = capabilities,
+            })
+
+            lspconfig.pyright.setup({
+                capabilities = capabilities,
+            })
+
+            lspconfig.ts_ls.setup({
+                capabilities = capabilities,
+            })
+
+            lspconfig.html.setup({
+                capabilities = capabilities,
+            })
+
+            lspconfig.cssls.setup({
                 capabilities = capabilities,
             })
 
